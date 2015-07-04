@@ -816,6 +816,7 @@
      <Compile Include="Assets\UNOShader\Bin\Scripts\UNOShaderHelper.cs" />
      <Compile Include="Assets\UNOShader\Bin\Scripts\UNOShaderUVAnimate.cs" />
      <Compile Include="Assets\UNOShader\UNOShaderSettings.cs" />
+     <Compile Include="Assets\UnityOBJExport\Scripts\UnityOBJExporter.cs" />
      <Compile Include="Assets\VolumetricClouds\Scripts\CloudInspector.cs" />
      <Compile Include="Assets\VolumetricClouds\Scripts\SlicedVolume.cs" />
      <Compile Include="Assets\iTween\iTween.cs" />
