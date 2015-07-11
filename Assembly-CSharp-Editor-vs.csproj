@@ -194,6 +194,7 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
      <None Include="Assets\UFPS\Base\Content\Art\Body\Animations\_README_Animations.txt" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\SystemOFFWeapon.txt" />
+     <None Include="Assets\UNOShader\UNLIT\Shaders\Shader Library\UNOShaderUNLIT MixAmbient Transparent Diffuse .shader" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\MaceWeaponPullLeft.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\MotionBlurClear.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\NFAA.shader" />
@@ -467,6 +468,7 @@
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\PerspOldCamera.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrainDX11.shader" />
      <None Include="Assets\SUIMONO - WATER SYSTEM 2\RESOURCES\SUIMONO_PRESET_Custom Presets.txt" />
+     <None Include="Assets\UNOShader\UNLIT\Shaders\Shader Library\UNOShaderUNLIT Transparent Diffuse Rim .shader" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\MeleeWeaponSwingUp.txt" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\WeaponsHD\Shotgun01\WeaponShotgun01Run.txt" />
      <None Include="Assets\UFPS\Base\Content\Levels\SkyCity\CustomShaders\ReflectiveCubeMapped.shader" />
