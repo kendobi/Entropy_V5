@@ -1,9 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../BossBattler/BossBattler/Assets/Standard Assets/2D/Scripts/RotateTo2.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Standard Assets/Scripts/FadeInOut.js">
     <Files>
-      <File FileName="../BossBattler/BossBattler/Assets/Standard Assets/2D/Scripts/RotateTo.js" Line="15" Column="3" />
-      <File FileName="../BossBattler/BossBattler/Assets/Standard Assets/2D/Scripts/RotateTo2.cs" Line="1" Column="1" />
+      <File FileName="Assets/Standard Assets/Scripts/FadeInOut.js" Line="13" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
