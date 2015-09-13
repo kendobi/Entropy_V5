@@ -120,7 +120,6 @@
      <Compile Include="Assets\Standard Assets\Scripts\AudioSync.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\General Scripts\ActivateTrigger.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\PlaySound.cs" />
-     <Compile Include="Assets\Standard Assets\Water (Basic)\Sources\Scripts\WaterSimple.cs" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Standard\Shooter\ShooterPistolOutOfControl.txt" />
      <None Include="Assets\UNOShader\UNLIT\Shaders\UNOShaderUNLIT.shader" />
@@ -391,7 +390,6 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\CreaseApply.shader" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\OldSchoolWeapon.txt" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\MouseLowSensInput.txt" />
-     <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Standard\Input\InputZoom.txt" />
      <None Include="Assets\SUIMONO - WATER SYSTEM 2\_Suimono2.0_ReadMe.txt" />
      <None Include="Assets\UNOShader\Bin\Shaders\UNOShader_Fallback_VertexUNLIT.shader" />
