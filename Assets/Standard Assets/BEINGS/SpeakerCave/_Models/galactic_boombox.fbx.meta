@@ -6,15 +6,45 @@ ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
     100000: //RootNode
+    100002: boombox1
+    100004: boombox_button
+    100006: boombox_button2
+    100008: boombox_button3
+    100010: boombox_cassette_door
+    100012: boombox_volumeknob
     400000: //RootNode
+    400002: boombox1
+    400004: boombox_button
+    400006: boombox_button2
+    400008: boombox_button3
+    400010: boombox_cassette_door
+    400012: boombox_volumeknob
     2300000: //RootNode
+    2300002: boombox1
+    2300004: boombox_button
+    2300006: boombox_button2
+    2300008: boombox_button3
+    2300010: boombox_cassette_door
+    2300012: boombox_volumeknob
     3300000: //RootNode
+    3300002: boombox1
+    3300004: boombox_button
+    3300006: boombox_button2
+    3300008: boombox_button3
+    3300010: boombox_cassette_door
+    3300012: boombox_volumeknob
     4300000: boombox
+    4300002: boombox_button3
+    4300004: boombox_button2
+    4300006: boombox_button
+    4300008: boombox_volumeknob
+    4300010: boombox_cassette_door
+    4300012: boombox1
     9500000: //RootNode
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 1
-    materialSearch: 1
+    materialSearch: 2
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -30,7 +60,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 10
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1

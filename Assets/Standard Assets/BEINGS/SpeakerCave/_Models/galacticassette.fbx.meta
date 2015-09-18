@@ -9,19 +9,39 @@ ModelImporter:
     100002: case1
     100004: //RootNode
     100006: tape
+    100008: cassette_case
+    100010: cassette_gear
+    100012: cassette_panel
+    100014: cassette_wheel
     400000: bracket
     400002: case1
     400004: //RootNode
     400006: tape
+    400008: cassette_case
+    400010: cassette_gear
+    400012: cassette_panel
+    400014: cassette_wheel
     2300000: bracket
     2300002: case1
     2300004: tape
+    2300006: cassette_case
+    2300008: cassette_gear
+    2300010: cassette_panel
+    2300012: cassette_wheel
     3300000: bracket
     3300002: case1
     3300004: tape
+    3300006: cassette_case
+    3300008: cassette_gear
+    3300010: cassette_panel
+    3300012: cassette_wheel
     4300000: case1
     4300002: bracket
     4300004: tape
+    4300006: cassette_gear
+    4300008: cassette_panel
+    4300010: cassette_case
+    4300012: cassette_wheel
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -42,7 +62,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .100000001
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 0
