@@ -6,9 +6,10 @@
  
  
  function fadeIn() {
-     if (audio1Volume < 1) {
+     while (audio1Volume < 1) {
          audio1Volume += 0.5 * Time.deltaTime;
          GetComponent.<AudioSource>().volume = audio1Volume;
+         yield;
      }
  }
  
