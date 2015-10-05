@@ -1,10 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../planetrock2/planetrock2/Assets/Resources/maybach_e_01.yaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Standard Assets/Scripts/FadeInOut.js">
     <Files>
-      <File FileName="../planetrock2/planetrock2/Assets/Resources/maybach_a_01.yaml" Line="20" Column="7" />
-      <File FileName="../planetrock2/planetrock2/Assets/Resources/maybach_d_01.yaml" Line="9" Column="5" />
-      <File FileName="../planetrock2/planetrock2/Assets/Resources/maybach_e_01.yaml" Line="15" Column="6" />
+      <File FileName="Assets/Standard Assets/Scripts/FadeInOut.js" Line="12" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
