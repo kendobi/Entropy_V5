@@ -817,7 +817,6 @@
      <Compile Include="Assets\UNOShader\Bin\Scripts\UNOShaderUVAnimate.cs" />
      <Compile Include="Assets\UNOShader\UNOShaderSettings.cs" />
      <Compile Include="Assets\UnityOBJExport\Scripts\UnityOBJExporter.cs" />
-     <Compile Include="Assets\VolumetricClouds\Scripts\CloudInspector.cs" />
      <Compile Include="Assets\VolumetricClouds\Scripts\SlicedVolume.cs" />
      <Compile Include="Assets\iTween\iTween.cs" />
      <Compile Include="Assets\scrollingUVS2.cs" />
@@ -914,6 +913,7 @@
      <None Include="Assets\UFPS\Base\Scripts\Presets\Standard\Weapon\WeaponPistolReload2.txt" />
      <None Include="Assets\Plugins\Cloud System\Resources\Shaders\MobileLightningCloudShader.shader" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Standard\Camera\CameraReload.txt" />
+     <None Include="Assets\UNOShader\UNLIT\Shaders\Shader Library\UNOShaderUNLIT Transparent Color .shader" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\SmackController.txt" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Standard\Camera\CameraFreeze.txt" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\MaceWeaponPullUpLeft.txt" />

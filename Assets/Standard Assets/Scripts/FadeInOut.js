@@ -14,7 +14,7 @@
  }
  
  function fadeOut() {
-     while (audio1Volume > 0.1) {
+     while (audio1Volume > -0.5) {
          audio1Volume -= 0.5 * Time.deltaTime;
          GetComponent.<AudioSource>().volume = audio1Volume;
          yield;
