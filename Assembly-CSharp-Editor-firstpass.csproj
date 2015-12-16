@@ -344,6 +344,7 @@
      <None Include="Assets\UFPS\Base\Scripts\Presets\Standard\Camera\CameraZoom.txt" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\WeaponsHD\Pistol01\WeaponPistol01Zoom.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrainDX11.shader" />
+     <None Include="Assets\3 Leaf Productions - Audio Pack\rock-wood sfx(mini pack)\ReadMe.txt" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\SystemOFFWeaponGlideIn.txt" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\SniperWeapon.txt" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Standard\Input\InputDead.txt" />
