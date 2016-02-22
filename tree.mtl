@@ -1,0 +1,6 @@
+newmtl tree_leaves_mat
+s 1 1
+map_Kd leaves_D.png
+
+newmtl tree_trunk_mat_03
+
