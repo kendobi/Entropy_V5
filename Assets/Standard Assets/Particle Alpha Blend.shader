@@ -70,6 +70,7 @@ Category {
 				#endif
 				
 				fixed4 col = 2.0f * i.color * _TintColor * tex2D(_MainTex, i.texcoord);
+				col = clamp(col, 0, 1);
 				UNITY_APPLY_FOG(i.fogCoord, col);
 				return col;
 			}

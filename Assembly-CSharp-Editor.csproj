@@ -19,7 +19,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_0;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_0;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;CROSS_PLATFORM_INPUT</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Editor\CloudInspector.cs" />
+     <Compile Include="Assets\Editor\FMODMigrationUtil.cs" />
      <Compile Include="Assets\Editor\ImageEffects\AntialiasingEditor.cs" />
      <Compile Include="Assets\Editor\ImageEffects\BloomAndFlaresEditor.cs" />
      <Compile Include="Assets\Editor\ImageEffects\BloomEditor.cs" />
@@ -119,6 +120,10 @@
      <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Editor\vp_RemotePlayerWizard.cs" />
      <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Editor\vp_SpawnPointEditor.cs" />
      <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Editor\vp_SurfaceIdentifierEditor.cs" />
+     <Compile Include="Assets\VolumetricFog\Demos\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
+     <Compile Include="Assets\VolumetricFog\Editor\FogVolumeExtensions.cs" />
+     <Compile Include="Assets\VolumetricFog\Editor\VolumetricFogAbout.cs" />
+     <Compile Include="Assets\VolumetricFog\Editor\VolumetricFogInspector.cs" />
      <Compile Include="Assets\iTween\PlayMaker\Editor\iTweenMoveToActionEditor.cs" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Standard\Shooter\ShooterPistolOutOfControl.txt" />
@@ -180,6 +185,7 @@
      <None Include="Assets\Cloud System Demos\Assets\GUI\Fonts\Ubunto Font Family\FONTLOG.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SimpleClear.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionCurves.shader" />
+     <None Include="Assets\VolumetricFog\Demos\Resources\Textures\Elephant_Credits.txt" />
      <None Include="Assets\FX Mega Pack 2\FX Mega Pack 2 - Readme.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ScreenSpaceAmbientObscurance.shader" />
@@ -300,6 +306,7 @@
      <None Include="Assets\UFPS\Base\Scripts\Presets\Standard\Camera\InputDead.txt" />
      <None Include="Assets\Plugins\Cloud System\Resources\Shaders\LightningCloudShader.shader" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Standard\Weapon\WeaponPistolOutOfControl.txt" />
+     <None Include="Assets\VolumetricFog\Demos\Resources\SpriteFog\SpriteFog.shader" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\WeaponsHD\AssaultRifle01\WeaponAssaultRifle01Zoom.txt" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\ModernShooter.txt" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Standard\Weapon\WeaponRevolver.txt" />
@@ -346,6 +353,7 @@
      <None Include="Assets\UFPS\Base\Scripts\Presets\WeaponsHD\Pistol01\WeaponPistol01Slide.txt" />
      <None Include="Assets\Plugins\Cloud System\Resources\Shaders\CloudShader.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MobileBlur.shader" />
+     <None Include="Assets\VolumetricFog\Resources\Shaders\VolumetricFog.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SSAOShader.shader" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\MeleeWeaponSwingRight.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ConvertDepth.shader" />
@@ -381,6 +389,7 @@
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\ImmobileWeapon.txt" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Standard\Weapon\WeaponMachinegunRun.txt" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\TurretWeapon.txt" />
+     <None Include="Assets\VolumetricFog\Demos\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\MaceWeapon.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlobalFog.shader" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\AstronautCamera.txt" />
@@ -469,9 +478,11 @@
      <None Include="Assets\UFPS\Base\Content\Levels\SkyCity\CustomShaders\Scroll_Emissive.shader" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\MechInput.txt" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\MeleeAttackToLeft.txt" />
+     <None Include="Assets\VolumetricFog\Demos\Resources\SpriteFog\SpriteFogCommon.cginc" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrain.shader" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\TurretCamera.txt" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\CowboyWeapon.txt" />
+     <None Include="Assets\VolumetricFog\Resources\Shaders\CopyDepth.shader" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\PivotElbowWeapon.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\PrepareSunShaftsBlur.shader" />
      <None Include="Assets\Standard Assets\AlphaSelfIllum.shader" />

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.07.00">
+    <object class="AudioFile" id="{b84046f4-c704-429f-ae48-72c54c924f4b}">
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>10.666689342403629</value>
+        </property>
+        <property name="audioFilePath">
+            <value>$(AUDIO_BIN_DIR)/grooveforest - 05 E1 Group E1 - 90 {695d7d66-f8c8-4f69-b779-a2be6cade27e}.wav</value>
+        </property>
+        <relationship name="container">
+            <destination>{e2b05b39-5415-4007-999d-81ef64853720}</destination>
+        </relationship>
+    </object>
+</objects>
