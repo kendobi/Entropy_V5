@@ -21,6 +21,7 @@
         </relationship>
         <relationship name="markerTracks">
             <destination>{9c2f745e-946a-4a69-b63c-a620767d214a}</destination>
+            <destination>{44863be6-745a-40fa-8c24-3070d59cf432}</destination>
         </relationship>
         <relationship name="groupTracks">
             <destination>{ce10a8f0-b8bc-456e-8e85-d4b1d3eb08ae}</destination>
@@ -58,6 +59,7 @@
     </object>
     <object class="EventAutomatableProperties" id="{d76adc03-014b-40bc-8bae-81666e0aced5}"/>
     <object class="MarkerTrack" id="{9c2f745e-946a-4a69-b63c-a620767d214a}"/>
+    <object class="MarkerTrack" id="{44863be6-745a-40fa-8c24-3070d59cf432}"/>
     <object class="GroupTrack" id="{ce10a8f0-b8bc-456e-8e85-d4b1d3eb08ae}">
         <relationship name="modules">
             <destination>{d2221f7c-ddb3-4d51-83ba-1673b56be762}</destination>
@@ -72,6 +74,7 @@
         </relationship>
         <relationship name="markers">
             <destination>{f49bb072-7423-4d43-bd10-b86d734434d0}</destination>
+            <destination>{ba4d618d-b6ed-4fa7-a92e-a7801102ce62}</destination>
         </relationship>
     </object>
     <object class="EventMixerMaster" id="{a495e9c6-f2ac-40b1-b7b6-22d736499d84}">
@@ -128,6 +131,20 @@
         </relationship>
         <relationship name="markerTrack">
             <destination>{9c2f745e-946a-4a69-b63c-a620767d214a}</destination>
+        </relationship>
+    </object>
+    <object class="TempoMarker" id="{ba4d618d-b6ed-4fa7-a92e-a7801102ce62}">
+        <property name="position">
+            <value>0</value>
+        </property>
+        <property name="tempo">
+            <value>90</value>
+        </property>
+        <relationship name="timeline">
+            <destination>{0ab83673-39c5-4e44-b89f-812a63501762}</destination>
+        </relationship>
+        <relationship name="markerTrack">
+            <destination>{44863be6-745a-40fa-8c24-3070d59cf432}</destination>
         </relationship>
     </object>
     <object class="MixerBusEffectChain" id="{e957b9e5-e5f2-480f-b62e-83e43b6f824a}">
