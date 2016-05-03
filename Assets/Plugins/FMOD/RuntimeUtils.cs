@@ -101,48 +101,6 @@ namespace FMODUnity
     {
         public const string LogFileName = "fmod.log";
 
-        public static void EnforceLibraryOrder()
-        {
-            #if UNITY_ANDROID && !UNITY_EDITOR
-            
-            // First, obtain the current activity context
-            AndroidJavaObject activity = null;
-            using (var activityClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer"))
-            {
-                activity = activityClass.GetStatic<AndroidJavaObject>("currentActivity");
-            }
-
-            using (var fmodJava = new AndroidJavaClass("org.fmod.FMOD"))
-            {
-                if (fmodJava != null)
-                {
-                    fmodJava.CallStatic("init", activity);
-                }
-                else
-                {
-                    UnityEngine.Debug.LogWarning("FMOD Studio: Cannot initialiaze Java wrapper");
-                }
-            }
-
-			AndroidJavaClass jSystem = new AndroidJavaClass("java.lang.System");
-			jSystem.CallStatic("loadLibrary", FMOD.VERSION.dll);
-			jSystem.CallStatic("loadLibrary", FMOD.Studio.STUDIO_VERSION.dll);
-            
-            #endif
-
-            #if !UNITY_IPHONE // iOS is statically linked
-
-            // Call a function in fmod.dll to make sure it's loaded before fmodstudio.dll
-            int temp1, temp2;
-            FMOD.Memory.GetStats(out temp1, out temp2);
-
-            Guid temp3;
-            FMOD.Studio.Util.ParseID("", out temp3);
-            
-            #endif
-
-        }
-
         public static FMOD.VECTOR ToFMODVector(this Vector3 vec)
         {
             FMOD.VECTOR temp;
@@ -173,6 +131,18 @@ namespace FMODUnity
             return attributes;
         }
 
+        public static FMOD.ATTRIBUTES_3D To3DAttributes(Transform transform, Rigidbody rigidbody = null)
+        {
+            FMOD.ATTRIBUTES_3D attributes = transform.To3DAttributes();
+
+            if (rigidbody)
+            {
+                attributes.velocity = rigidbody.velocity.ToFMODVector();
+            }
+
+            return attributes;
+        }
+
         public static FMOD.ATTRIBUTES_3D To3DAttributes(GameObject go, Rigidbody rigidbody = null)
         {
             FMOD.ATTRIBUTES_3D attributes = go.transform.To3DAttributes();
@@ -185,7 +155,8 @@ namespace FMODUnity
             return attributes;
         }
 
-        public static FMODPlatform GetCurrentPlatform()
+        // Internal Helper Functions
+        internal static FMODPlatform GetCurrentPlatform()
         {
             #if UNITY_EDITOR
             return FMODPlatform.PlayInEditor;
@@ -195,6 +166,8 @@ namespace FMODUnity
             return FMODPlatform.Mac;
             #elif UNITY_STANDALONE_LINUX
             return FMODPlatform.Linux;
+			#elif UNITY_TVOS
+			return FMODPlatform.AppleTV;
             #elif UNITY_IOS
             FMODPlatform result;
             switch (UnityEngine.iOS.Device.generation)
@@ -278,11 +251,13 @@ namespace FMODUnity
             return FMODPlatform.PSVita;
             #elif UNITY_WIIU
             return FMODPlatform.WiiU;
+            #elif UNITY_WSA_10_0
+            return FMODPlatform.UWP;
             #endif
         }
 
         const string BankExtension = ".bank";
-        public static string GetBankPath(string bankName)
+        internal static string GetBankPath(string bankName)
         {           
             #if UNITY_EDITOR
             // For play in editor use original asset location because streaming asset folder will contain platform specific banks
@@ -301,7 +276,7 @@ namespace FMODUnity
             {
                 bankFolder = String.Format("jar:file://{0}!/assets", Application.dataPath);
             }
-            #elif UNITY_WINRT_8_1
+            #elif UNITY_WINRT_8_1 || UNITY_WSA_10_0
             string bankFolder = "ms-appx:///Data/StreamingAssets";
             #else
             string bankFolder = Application.streamingAssetsPath;
@@ -317,17 +292,17 @@ namespace FMODUnity
             }            
         }
 
-        public static string GetPluginPath(string pluginName)
+        internal static string GetPluginPath(string pluginName)
         {
-            #if UNITY_IOS
+			#if (UNITY_IOS || UNITY_TVOS || UNITY_PSP2)
 				return "";
 			#else
-	            #if UNITY_EDITOR_WIN || UNITY_STANDALONE_WIN || UNITY_XBOXONE || UNITY_WINRT_8_1
+	            #if UNITY_EDITOR_WIN || UNITY_STANDALONE_WIN || UNITY_XBOXONE || UNITY_WINRT_8_1 || UNITY_WSA_10_0
 	                string pluginFileName = pluginName + ".dll";
 	            #elif UNITY_STANDALONE_OSX || UNITY_EDITOR_OSX
 					string pluginFileName = pluginName + ".bundle";
 	            #elif UNITY_PS4
-	                string pluginFileName = pluginName + ".prx"
+	                string pluginFileName = pluginName + ".prx";
 	            #elif UNITY_ANDROID || UNITY_STANDALONE_LINUX
 	                string pluginFileName = "lib" + pluginName + ".so";
 	            #endif
@@ -336,7 +311,7 @@ namespace FMODUnity
 	                string pluginFolder = Application.dataPath + "/Plugins/X86_64/";
 	            #elif UNITY_EDITOR_WIN
 	                string pluginFolder = Application.dataPath + "/Plugins/X86/";
-	            #elif UNITY_STANDALONE_WIN || UNITY_PS4 || UNITY_XBOXONE || UNITY_STANDALONE_OSX || UNITY_EDITOR_OSX || UNITY_STANDALONE_LINUX
+	            #elif UNITY_STANDALONE_WIN || UNITY_PS4 || UNITY_XBOXONE || UNITY_STANDALONE_OSX || UNITY_EDITOR_OSX || UNITY_STANDALONE_LINUX || UNITY_WSA_10_0
 	                string pluginFolder = Application.dataPath + "/Plugins/";
 	            #elif UNITY_WINRT_8_1
 	                string pluginFolder = "";
@@ -350,6 +325,28 @@ namespace FMODUnity
 
 	            return pluginFolder + pluginFileName;
 			#endif
+        }
+
+        public static void EnforceLibraryOrder()
+        {
+            #if UNITY_ANDROID && !UNITY_EDITOR
+
+			AndroidJavaClass jSystem = new AndroidJavaClass("java.lang.System");
+			jSystem.CallStatic("loadLibrary", FMOD.VERSION.dll);
+			jSystem.CallStatic("loadLibrary", FMOD.Studio.STUDIO_VERSION.dll);
+            
+            #endif
+
+			#if !UNITY_IPHONE || UNITY_EDITOR // iOS is statically linked
+
+            // Call a function in fmod.dll to make sure it's loaded before fmodstudio.dll
+            int temp1, temp2;
+            FMOD.Memory.GetStats(out temp1, out temp2);
+
+            Guid temp3;
+            FMOD.Studio.Util.ParseID("", out temp3);           
+
+            #endif
         }
     }
 }

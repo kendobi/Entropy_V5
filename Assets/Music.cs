@@ -9,6 +9,22 @@ public class Music : MonoBehaviour {
 	[FMODUnity.EventRef]
 	public string music = "event:/GrooveForest";
 
+	FMOD.Studio.EventInstance Track1Event;
+	[FMODUnity.EventRef]
+	public string drums = "event:/Track1";
+
+	FMOD.Studio.EventInstance Track2Event;
+	[FMODUnity.EventRef]
+	public string chords = "event:/Track2";
+
+	FMOD.Studio.EventInstance Track3Event;
+	[FMODUnity.EventRef]
+	public string track3 = "event:/Track3";
+
+	FMOD.Studio.EventInstance Track4Event;
+	[FMODUnity.EventRef]
+	public string track4 = "event:/Track4";
+
 	//volume paramters
 	FMOD.Studio.ParameterInstance track1VolParam;
 	FMOD.Studio.ParameterInstance track2VolParam;
@@ -38,20 +54,33 @@ public class Music : MonoBehaviour {
 	void Start () {
 
 		//start music
-		soundSystem = FMODUnity.RuntimeManager.CreateInstance(music);
-		soundSystem.start();
+		Track4Event = FMODUnity.RuntimeManager.CreateInstance(track4);
+		Track4Event.start();
+
+		Track1Event = FMODUnity.RuntimeManager.CreateInstance(drums);
+		Track1Event.start();
+
+		Track2Event = FMODUnity.RuntimeManager.CreateInstance(chords);
+		Track2Event.start();
+
+		Track3Event = FMODUnity.RuntimeManager.CreateInstance(track3);
+		Track3Event.start();
 
 		myOneShot = FMODUnity.RuntimeManager.CreateInstance(oneShot);
 
 		//setup parameters
-		soundSystem.getParameter("Track1Vol", out track1VolParam);
+		Track1Event.getParameter("Track1Vol", out track1VolParam);
 		track1VolParam.setValue (0);
-		soundSystem.getParameter("Track2Vol", out track2VolParam);
+
+		Track2Event.getParameter("Track1Vol", out track2VolParam);
 		track2VolParam.setValue (0);
-		soundSystem.getParameter("Track3Vol", out track3VolParam);
+
+		Track3Event.getParameter("Track1Vol", out track3VolParam);
 		track3VolParam.setValue (0);
-		soundSystem.getParameter("Track4Vol", out track4VolParam);
+
+		Track4Event.getParameter("Track1Vol", out track4VolParam);
 		track4VolParam.setValue (0);
+
 		soundSystem.getParameter("Track5Vol", out track5VolParam);
 		track5VolParam.setValue (0);
 		soundSystem.getParameter("Track6Vol", out track6VolParam);
@@ -75,7 +104,7 @@ public class Music : MonoBehaviour {
 
 
 		}
-		myOneShot.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(transform.position));
+		//myOneShot.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(transform.position));
 
 		//myOneShot.set3DAttributes(FMOD.Studio.UnityUtil.to3DAttributes(gameObject.transform.position));
 	
@@ -84,18 +113,22 @@ public class Music : MonoBehaviour {
 	void OnTriggerEnter (Collider other){
 		//Vector3 position = other.gameObject.transform.position;
 		//FMOD_VECTOR pos = position;
+
 		if (other.gameObject.CompareTag (track1Tag))
 		{
+			Track1Event.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(other.transform.position));
 			TriggerTrack(track1VolParam);
 			print ("stone trigger");
 		}
 		if (other.gameObject.CompareTag (track2Tag))
 		{
+			Track2Event.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(other.transform.position));
 			TriggerTrack(track2VolParam);
 			print ("grass trigger");
 		}
 		if (other.gameObject.CompareTag (track3Tag))
 		{
+			Track3Event.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(other.transform.position));
 			TriggerTrack(track3VolParam);
 			print ("tree trigger");
 		}

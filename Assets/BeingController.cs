@@ -5,9 +5,11 @@ public class BeingController : MonoBehaviour {
 
 	public GameObject VFX;
 
+	Animator anim;
+
 	// Use this for initialization
 	void Start () {
-	
+		anim = GetComponent<Animator> ();
 	}
 	
 	// Update is called once per frame
@@ -16,6 +18,7 @@ public class BeingController : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
+		anim.SetTrigger ("on");
 		VFX.SetActive (true);
 		Debug.Log ("TRIGGER WORKS");
 	}

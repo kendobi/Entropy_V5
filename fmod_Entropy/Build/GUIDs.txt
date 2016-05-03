@@ -1,4 +1,7 @@
-{058ee7b7-af5d-4fcc-a8a4-3050746783de} event:/GrooveForest
-{d2404690-d6f7-40ae-85be-5440de88026a} bus:/
-{2bb4ebd3-9876-43c3-8f47-b373051c65e1} bus:/Reverb
-{8bef3532-20f5-4d1e-989b-6c147b1884b2} bank:/Master Bank
+{c5f2ab0e-741d-4747-80f2-1829c36e2975} event:/Track1
+{76da7039-1e22-4443-91ba-275f6c1b36ef} event:/Track2
+{d36b68ac-a9e3-4569-9400-6a1d578a5679} event:/Track3
+{f12dd5e0-fafe-4374-a629-67aa804d2c4b} event:/Track4
+{3113fee2-648e-43ad-a389-5d468c1689bd} bus:/
+{54bc9c23-f4cf-45b8-847e-8d563ff775bb} bus:/Reverb
+{91b349de-e41c-4754-8c5e-97767e2636c2} bank:/Master Bank

@@ -31,19 +31,11 @@ namespace FMODUnity
         PS4,
         WiiU,
         PSVita,
+		AppleTV,
+        UWP,
         Count,
     }
-
-    [Serializable]
-    public enum SpeakerMode
-    {
-        //AutoDetect,
-        Stereo,
-        //Quad,
-        _51,
-        _71,
-    }
-
+    
     public class PlatformSettingBase
     {
         public FMODPlatform Platform;
@@ -174,13 +166,15 @@ namespace FMODUnity
                 case FMODPlatform.Windows:
                 case FMODPlatform.Linux:
                 case FMODPlatform.Mac:
+                case FMODPlatform.UWP:
                     return FMODPlatform.Desktop;
                 case FMODPlatform.MobileHigh:
                 case FMODPlatform.MobileLow:
                 case FMODPlatform.iOS:
                 case FMODPlatform.Android:
                 case FMODPlatform.WindowsPhone:
-                case FMODPlatform.PSVita:
+				case FMODPlatform.PSVita:
+			    case FMODPlatform.AppleTV:
                     return FMODPlatform.Mobile;
                 case FMODPlatform.XboxOne:
                 case FMODPlatform.PS4:
@@ -190,8 +184,9 @@ namespace FMODUnity
                 case FMODPlatform.Console:
                 case FMODPlatform.Mobile:
                     return FMODPlatform.Default;
-                case FMODPlatform.Default:
                 case FMODPlatform.PlayInEditor:
+                    return FMODPlatform.Default;
+                case FMODPlatform.Default:
                 default:
                     return FMODPlatform.None;
             }
@@ -270,7 +265,7 @@ namespace FMODUnity
         // --------   Speaker Mode ----------------------
         public int GetSpeakerMode(FMODPlatform platform)
         {
-            return GetSetting(SpeakerModeSettings, platform, 0);
+            return GetSetting(SpeakerModeSettings, platform, (int)FMOD.SPEAKERMODE.STEREO);
         }
         // --------   Sample Rate ----------------------
         public int GetSampleRate(FMODPlatform platform)
@@ -300,9 +295,10 @@ namespace FMODUnity
             SetSetting(LoggingSettings, FMODPlatform.PlayInEditor, true);
             SetSetting(LiveUpdateSettings, FMODPlatform.PlayInEditor, true);
             SetSetting(OverlaySettings, FMODPlatform.PlayInEditor, true);
+            SetSetting(SpeakerModeSettings, FMODPlatform.PlayInEditor, (int)FMOD.SPEAKERMODE.STEREO);
             // These are not editable, set them high
-            SetSetting(RealChannelSettings, FMODPlatform.Default, 256);
-            SetSetting(VirtualChannelSettings, FMODPlatform.Default, 1024);
+            SetSetting(RealChannelSettings, FMODPlatform.PlayInEditor, 256);
+            SetSetting(VirtualChannelSettings, FMODPlatform.PlayInEditor, 1024);
 
             // Default runtime settings
             SetSetting(LoggingSettings, FMODPlatform.Default, false);
