@@ -80,7 +80,7 @@ public class Music : MonoBehaviour {
 		myOneShot = FMODUnity.RuntimeManager.CreateInstance(oneShot);
 
 		//setup parameters
-		Track1Event.getParameter("Track1Vol", out track1VolParam);
+		/*Track1Event.getParameter("Track1Vol", out track1VolParam);
 		track1VolParam.setValue (0);
 
 		Track2Event.getParameter("Track1Vol", out track2VolParam);
@@ -101,7 +101,7 @@ public class Music : MonoBehaviour {
 		soundSystem.getParameter("Track8Vol", out track8VolParam);
 		track8VolParam.setValue (0);
 		soundSystem.getParameter("Track9Vol", out track9VolParam);
-		track9VolParam.setValue (0);
+		track9VolParam.setValue (0);*/
 
 		beatOn = false;
 	
@@ -118,41 +118,41 @@ public class Music : MonoBehaviour {
 		if (beatOn) {
 			if (other.gameObject.CompareTag (track1Tag)) {
 				Track1Event.set3DAttributes (FMODUnity.RuntimeUtils.To3DAttributes (other.transform.position));
-				TriggerTrack (track1VolParam);
+				//TriggerTrack (track1VolParam);
 				print ("stone trigger");
 			}
 			if (other.gameObject.CompareTag (track2Tag)) {
 				Track2Event.set3DAttributes (FMODUnity.RuntimeUtils.To3DAttributes (other.transform.position));
-				TriggerTrack (track2VolParam);
+				//TriggerTrack (track2VolParam);
 				print ("grass trigger");
 			}
 			if (other.gameObject.CompareTag (track3Tag)) {
 				Track3Event.set3DAttributes (FMODUnity.RuntimeUtils.To3DAttributes (other.transform.position));
-				TriggerTrack (track3VolParam);
+				//TriggerTrack (track3VolParam);
 				print ("tree trigger");
 			}
 			if (other.gameObject.CompareTag (track4Tag)) {
-				TriggerTrack (track4VolParam);
+				//TriggerTrack (track4VolParam);
 				print ("tree trigger");
 			}
 			if (other.gameObject.CompareTag (track5Tag)) {
-				TriggerTrack (track5VolParam);
+				//TriggerTrack (track5VolParam);
 				print ("tree trigger");
 			}
 			if (other.gameObject.CompareTag (track6Tag)) {
-				TriggerTrack (track6VolParam);
+				//TriggerTrack (track6VolParam);
 				print ("tree trigger");
 			}
 			if (other.gameObject.CompareTag (track7Tag)) {
-				TriggerTrack (track7VolParam);
+				//TriggerTrack (track7VolParam);
 				print ("tree trigger");
 			}
 			if (other.gameObject.CompareTag (track8Tag)) {
-				TriggerTrack (track8VolParam);
+				//TriggerTrack (track8VolParam);
 				print ("tree trigger");
 			}
 			if (other.gameObject.CompareTag (track9Tag)) {
-				TriggerTrack (track9VolParam);
+				//TriggerTrack (track9VolParam);
 				print ("tree trigger");
 			}
 		} 
@@ -160,7 +160,7 @@ public class Music : MonoBehaviour {
 
 	}
 
-	void TriggerTrack(FMOD.Studio.ParameterInstance param){
+	/*void TriggerTrack(FMOD.Studio.ParameterInstance param){
 		FadeIn (param);
 	}
 
@@ -170,7 +170,7 @@ public class Music : MonoBehaviour {
 
 	void FadeOut(FMOD.Studio.ParameterInstance param){
 		param.setValue (0);
-	}
+	}*/
 
 	public FMOD.RESULT StudioEventCallback(FMOD.Studio.EVENT_CALLBACK_TYPE type, IntPtr eventInstance, IntPtr parameters)
 	{
