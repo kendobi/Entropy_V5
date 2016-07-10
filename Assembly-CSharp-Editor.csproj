@@ -836,6 +836,9 @@
  <Reference Include="PlayMaker">
  <HintPath>/Users/kennykong/Documents/Entropy_v5/Assets/Plugins/PlayMaker/PlayMaker.dll</HintPath>
  </Reference>
+ <Reference Include="ShaderForge">
+ <HintPath>/Users/kennykong/Documents/Entropy_v5/Assets/ShaderForge/Editor/ShaderForge.dll</HintPath>
+ </Reference>
  <Reference Include="UNOShaderUNLIT">
  <HintPath>/Users/kennykong/Documents/Entropy_v5/Assets/UNOShader/UNLIT/Editor/UNOShaderUNLIT.dll</HintPath>
  </Reference>
@@ -850,9 +853,6 @@
  </Reference>
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>/Applications/Unity/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="ShaderForge">
- <HintPath>/Users/kennykong/Documents/Entropy_v5/Assets/ShaderForge/Editor/ShaderForge.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
