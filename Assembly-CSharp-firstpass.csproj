@@ -191,6 +191,7 @@
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\Common\ExtractChannel.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\Shader Presets\PresetParticleMultiplicative.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
+     <None Include="Assets\Standard Assets\Shaders\AlphaPulse.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\VortexEffect.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Max\SFN_Max_3.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\RadialBlur.shader" />

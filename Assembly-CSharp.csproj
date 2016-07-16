@@ -678,6 +678,10 @@
      <Compile Include="Assets\PlayMaker\Actions\iTween\iTweenShakeScale.cs" />
      <Compile Include="Assets\PlayMaker\Actions\iTween\iTweenStop.cs" />
      <Compile Include="Assets\PlayMaker\Include\iTweenFSMEvents.cs" />
+     <Compile Include="Assets\Scripts\LevelScripts\ControlsTutorial.cs" />
+     <Compile Include="Assets\Scripts\LevelScripts\HintManagement.cs" />
+     <Compile Include="Assets\Scripts\LevelScripts\ThirdPersonOrbitCam.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\PlayerControl.cs" />
      <Compile Include="Assets\ScrollingUVs.cs" />
      <Compile Include="Assets\ShaderForge\Example Assets\Scripts\EditorLabel.cs" />
      <Compile Include="Assets\ShaderForge\Example Assets\Scripts\EnableCameraDepthInForward.cs" />
@@ -819,10 +823,6 @@
      <Compile Include="Assets\UnityOBJExport\Scripts\UnityOBJExporter.cs" />
      <Compile Include="Assets\VolumetricFog\Demos\Demo1_Walk\DemoWalk.cs" />
      <Compile Include="Assets\VolumetricFog\Demos\Demo2_FogOfWar\DemoFogOfWar.cs" />
-     <Compile Include="Assets\VolumetricFog\Demos\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" />
-     <Compile Include="Assets\VolumetricFog\Demos\Standard Assets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs" />
-     <Compile Include="Assets\VolumetricFog\Demos\Standard Assets\Characters\FirstPersonCharacter\Scripts\MouseLook.cs" />
-     <Compile Include="Assets\VolumetricFog\Demos\Standard Assets\Characters\FirstPersonCharacter\Scripts\RigidbodyFirstPersonController.cs" />
      <Compile Include="Assets\VolumetricFog\Demos\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
      <Compile Include="Assets\VolumetricFog\Demos\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
      <Compile Include="Assets\VolumetricFog\Demos\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
@@ -840,6 +840,7 @@
      <Compile Include="Assets\VolumetricFog\Demos\Standard Assets\Utility\CurveControlledBob.cs" />
      <Compile Include="Assets\VolumetricFog\Demos\Standard Assets\Utility\DragRigidbody.cs" />
      <Compile Include="Assets\VolumetricFog\Demos\Standard Assets\Utility\DynamicShadowSettings.cs" />
+     <Compile Include="Assets\VolumetricFog\Demos\Standard Assets\Utility\EventSystemChecker.cs" />
      <Compile Include="Assets\VolumetricFog\Demos\Standard Assets\Utility\FOVKick.cs" />
      <Compile Include="Assets\VolumetricFog\Demos\Standard Assets\Utility\FPSCounter.cs" />
      <Compile Include="Assets\VolumetricFog\Demos\Standard Assets\Utility\FollowTarget.cs" />
@@ -915,6 +916,7 @@
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\Common\ExtractChannel.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\Shader Presets\PresetParticleMultiplicative.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
+     <None Include="Assets\Standard Assets\Shaders\AlphaPulse.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\VortexEffect.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Max\SFN_Max_3.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\RadialBlur.shader" />
