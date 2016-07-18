@@ -361,6 +361,7 @@
      <None Include="Assets\Standard Assets\Particle Alpha Blend.shader" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Standard\Shooter\ShooterPistolZoom.txt" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\OldSchoolCamera.txt" />
+     <None Include="Assets\Standard Assets\Shaders\customLit.shader" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\MaceWeaponPullUpRight.txt" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Standard\Controller\ControllerZoom.txt" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Standard\Input\InputClimb.txt" />
