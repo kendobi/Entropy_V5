@@ -65,8 +65,8 @@ Shader "Entropy/PulsingDecal" {
                 VertexOutput o = (VertexOutput)0;
                 o.uv0 = v.texcoord0;
                 o.normalDir = UnityObjectToWorldNormal(v.normal);
-                float4 node_1746 = _Time + _TimeEditor;
-                v.vertex.xyz += (pow((abs((frac((o.uv0+node_1746.g*float2(0,-0.35)).g)-0.5))*2.0),_BulgeShape)*_BulgeScale*v.normal);
+                float4 node_5541 = _Time + _TimeEditor;
+                v.vertex.xyz += (pow((abs((frac((o.uv0+node_5541.g*float2(0,-0.35)).g)-0.5))*2.0),_BulgeShape)*_BulgeScale*v.normal);
                 o.posWorld = mul(_Object2World, v.vertex);
                 o.pos = mul(UNITY_MATRIX_MVP, v.vertex );
                 UNITY_TRANSFER_FOG(o,o.pos);
@@ -132,8 +132,8 @@ Shader "Entropy/PulsingDecal" {
                 VertexOutput o = (VertexOutput)0;
                 o.uv0 = v.texcoord0;
                 o.normalDir = UnityObjectToWorldNormal(v.normal);
-                float4 node_7219 = _Time + _TimeEditor;
-                v.vertex.xyz += (pow((abs((frac((o.uv0+node_7219.g*float2(0,-0.35)).g)-0.5))*2.0),_BulgeShape)*_BulgeScale*v.normal);
+                float4 node_1622 = _Time + _TimeEditor;
+                v.vertex.xyz += (pow((abs((frac((o.uv0+node_1622.g*float2(0,-0.35)).g)-0.5))*2.0),_BulgeShape)*_BulgeScale*v.normal);
                 o.posWorld = mul(_Object2World, v.vertex);
                 o.pos = mul(UNITY_MATRIX_MVP, v.vertex );
                 TRANSFER_SHADOW_CASTER(o)
@@ -196,8 +196,8 @@ Shader "Entropy/PulsingDecal" {
                 VertexOutput o = (VertexOutput)0;
                 o.uv0 = v.texcoord0;
                 o.normalDir = UnityObjectToWorldNormal(v.normal);
-                float4 node_1862 = _Time + _TimeEditor;
-                v.vertex.xyz += (pow((abs((frac((o.uv0+node_1862.g*float2(0,-0.35)).g)-0.5))*2.0),_BulgeShape)*_BulgeScale*v.normal);
+                float4 node_6360 = _Time + _TimeEditor;
+                v.vertex.xyz += (pow((abs((frac((o.uv0+node_6360.g*float2(0,-0.35)).g)-0.5))*2.0),_BulgeShape)*_BulgeScale*v.normal);
                 o.posWorld = mul(_Object2World, v.vertex);
                 o.pos = UnityMetaVertexPosition(v.vertex, v.texcoord1.xy, v.texcoord2.xy, unity_LightmapST, unity_DynamicLightmapST );
                 return o;
