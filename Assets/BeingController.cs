@@ -18,10 +18,10 @@ public class BeingController : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		if (Input.GetMouseButtonDown (0)) {
+		//if (Input.GetMouseButtonDown (0)) {
 			anim.SetTrigger ("on");
 			VFX.SetActive (true);
 			//Debug.Log ("TRIGGER WORKS");
-		}
+		//}
 	}
 }
