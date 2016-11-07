@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+
 //Version=1.2
 Shader"UNOShader/_Library/UNLIT/UNOShaderUNLIT Transparent Diffuse ZwriteOff "
 {
@@ -63,7 +65,7 @@ Shader"UNOShader/_Library/UNLIT/UNOShaderUNLIT Transparent Diffuse ZwriteOff "
 			v2f vert (customData v)
 			{
 				v2f o;
-				o.posWorld = mul(_Object2World, v.vertex);
+				o.posWorld = mul(unity_ObjectToWorld, v.vertex);
 				o.normalDir = UnityObjectToWorldNormal(v.normal);
 				o.pos = mul (UNITY_MATRIX_MVP, v.vertex);//UNITY_MATRIX_MVP is a matrix that will convert a model's vertex position to the projection space
 				o.uv = fixed4(0,0,0,0);

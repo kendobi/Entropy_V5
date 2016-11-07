@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+
 // Shader created with Shader Forge v1.26 
 // Shader Forge (c) Neat Corporation / Joachim Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
@@ -67,7 +69,7 @@ Shader "Entropy/PulsingDecal" {
                 o.normalDir = UnityObjectToWorldNormal(v.normal);
                 float4 node_5541 = _Time + _TimeEditor;
                 v.vertex.xyz += (pow((abs((frac((o.uv0+node_5541.g*float2(0,-0.35)).g)-0.5))*2.0),_BulgeShape)*_BulgeScale*v.normal);
-                o.posWorld = mul(_Object2World, v.vertex);
+                o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 o.pos = mul(UNITY_MATRIX_MVP, v.vertex );
                 UNITY_TRANSFER_FOG(o,o.pos);
                 return o;
@@ -134,7 +136,7 @@ Shader "Entropy/PulsingDecal" {
                 o.normalDir = UnityObjectToWorldNormal(v.normal);
                 float4 node_1622 = _Time + _TimeEditor;
                 v.vertex.xyz += (pow((abs((frac((o.uv0+node_1622.g*float2(0,-0.35)).g)-0.5))*2.0),_BulgeShape)*_BulgeScale*v.normal);
-                o.posWorld = mul(_Object2World, v.vertex);
+                o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 o.pos = mul(UNITY_MATRIX_MVP, v.vertex );
                 TRANSFER_SHADOW_CASTER(o)
                 return o;
@@ -198,7 +200,7 @@ Shader "Entropy/PulsingDecal" {
                 o.normalDir = UnityObjectToWorldNormal(v.normal);
                 float4 node_6360 = _Time + _TimeEditor;
                 v.vertex.xyz += (pow((abs((frac((o.uv0+node_6360.g*float2(0,-0.35)).g)-0.5))*2.0),_BulgeShape)*_BulgeScale*v.normal);
-                o.posWorld = mul(_Object2World, v.vertex);
+                o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 o.pos = UnityMetaVertexPosition(v.vertex, v.texcoord1.xy, v.texcoord2.xy, unity_LightmapST, unity_DynamicLightmapST );
                 return o;
             }

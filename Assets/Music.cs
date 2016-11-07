@@ -7,6 +7,9 @@ using FMOD;
 
 public class Music : MonoBehaviour {
 
+	//private float distToGround;
+	private Vector3 normal;
+	private Vector3 myLastPos;
 
 	//events
 	FMOD.Studio.EventInstance soundSystem;
@@ -47,6 +50,8 @@ public class Music : MonoBehaviour {
 	FMOD.Studio.EventInstance myOneShot;
 	public string oneShot = "event:/OneShot";
 
+	public GameObject prefab;
+
 	public string track1Tag;
 	public string track2Tag;
 	public string track3Tag;
@@ -61,6 +66,8 @@ public class Music : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+		//distToGround = GetComponent<Collider> ().bounds.size.y - GetComponent<Collider>();
 
 		//start music
 		Track4Event = FMODUnity.RuntimeManager.CreateInstance(track4);
@@ -104,6 +111,7 @@ public class Music : MonoBehaviour {
 		track9VolParam.setValue (0);*/
 
 		beatOn = false;
+
 	
 	}
 
@@ -178,9 +186,30 @@ public class Music : MonoBehaviour {
 			FMOD.Studio.TIMELINE_BEAT_PROPERTIES beat = (FMOD.Studio.TIMELINE_BEAT_PROPERTIES)Marshal.PtrToStructure (parameters, typeof(FMOD.Studio.TIMELINE_BEAT_PROPERTIES));
 			print ("beat");
 			beatOn = true;
+			//Vector3 newPosition = transform.position;
+			SpawnObject(prefab);
+
+
+
 		} 
 		else
 			beatOn = false;
 		return FMOD.RESULT.OK;
 	}
+
+	void SpawnObject(GameObject obj){
+		Vector3 myPos = transform.position;
+
+		RaycastHit hit;
+		if (Physics.Raycast(transform.position, -transform.up, out hit, 10)){
+			normal = hit.normal;
+			if(Vector3.Distance(myPos,myLastPos) > 0.5){
+				GameObject go = (GameObject)Instantiate (prefab, hit.point, Quaternion.identity);
+				go.transform.rotation = Quaternion.FromToRotation(transform.up, hit.normal) * go.transform.rotation;
+			}
+
+			myLastPos = myPos;
+		}
+	}
+		
 }

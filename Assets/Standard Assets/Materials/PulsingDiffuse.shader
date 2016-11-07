@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+
 // Shader created with Shader Forge v1.06 
 // Shader Forge (c) Neat Corporation / Joachim Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
@@ -48,10 +50,10 @@ Shader "Shader Forge/PulsingDiffuse" {
             VertexOutput vert (VertexInput v) {
                 VertexOutput o = (VertexOutput)0;
                 o.uv0 = v.texcoord0;
-                o.normalDir = mul(_Object2World, float4(v.normal,0)).xyz;
+                o.normalDir = mul(unity_ObjectToWorld, float4(v.normal,0)).xyz;
                 float4 node_7277 = _Time + _TimeEditor;
                 v.vertex.xyz += (pow((abs((frac((o.uv0+node_7277.g*float2(0,-0.35)).g)-0.5))*2.0),_BulgeShape)*_BulgeScale*v.normal);
-                o.posWorld = mul(_Object2World, v.vertex);
+                o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
                 return o;
             }
@@ -110,10 +112,10 @@ Shader "Shader Forge/PulsingDiffuse" {
             VertexOutput vert (VertexInput v) {
                 VertexOutput o = (VertexOutput)0;
                 o.uv0 = v.texcoord0;
-                o.normalDir = mul(_Object2World, float4(v.normal,0)).xyz;
+                o.normalDir = mul(unity_ObjectToWorld, float4(v.normal,0)).xyz;
                 float4 node_5724 = _Time + _TimeEditor;
                 v.vertex.xyz += (pow((abs((frac((o.uv0+node_5724.g*float2(0,-0.35)).g)-0.5))*2.0),_BulgeShape)*_BulgeScale*v.normal);
-                o.posWorld = mul(_Object2World, v.vertex);
+                o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
                 return o;
             }
@@ -172,10 +174,10 @@ Shader "Shader Forge/PulsingDiffuse" {
             VertexOutput vert (VertexInput v) {
                 VertexOutput o = (VertexOutput)0;
                 o.uv0 = v.texcoord0;
-                o.normalDir = mul(_Object2World, float4(v.normal,0)).xyz;
+                o.normalDir = mul(unity_ObjectToWorld, float4(v.normal,0)).xyz;
                 float4 node_971 = _Time + _TimeEditor;
                 v.vertex.xyz += (pow((abs((frac((o.uv0+node_971.g*float2(0,-0.35)).g)-0.5))*2.0),_BulgeShape)*_BulgeScale*v.normal);
-                o.posWorld = mul(_Object2World, v.vertex);
+                o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
                 return o;
             }
@@ -233,7 +235,7 @@ Shader "Shader Forge/PulsingDiffuse" {
             VertexOutput vert (VertexInput v) {
                 VertexOutput o = (VertexOutput)0;
                 o.uv0 = v.texcoord0;
-                o.normalDir = mul(_Object2World, float4(v.normal,0)).xyz;
+                o.normalDir = mul(unity_ObjectToWorld, float4(v.normal,0)).xyz;
                 float4 node_8507 = _Time + _TimeEditor;
                 v.vertex.xyz += (pow((abs((frac((o.uv0+node_8507.g*float2(0,-0.35)).g)-0.5))*2.0),_BulgeShape)*_BulgeScale*v.normal);
                 o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
@@ -282,7 +284,7 @@ Shader "Shader Forge/PulsingDiffuse" {
             VertexOutput vert (VertexInput v) {
                 VertexOutput o = (VertexOutput)0;
                 o.uv0 = v.texcoord0;
-                o.normalDir = mul(_Object2World, float4(v.normal,0)).xyz;
+                o.normalDir = mul(unity_ObjectToWorld, float4(v.normal,0)).xyz;
                 float4 node_437 = _Time + _TimeEditor;
                 v.vertex.xyz += (pow((abs((frac((o.uv0+node_437.g*float2(0,-0.35)).g)-0.5))*2.0),_BulgeShape)*_BulgeScale*v.normal);
                 o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
