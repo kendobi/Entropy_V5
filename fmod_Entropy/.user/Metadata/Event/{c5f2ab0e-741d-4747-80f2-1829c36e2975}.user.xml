@@ -16,7 +16,7 @@
     <object class="GroupTrack" id="{ce10a8f0-b8bc-456e-8e85-d4b1d3eb08ae}"/>
     <object class="Timeline" id="{0ab83673-39c5-4e44-b89f-812a63501762}">
         <property name="uiLastRulerScaleRatio">
-            <value>0.010062914473965687</value>
+            <value>0.0065985437029393076</value>
         </property>
     </object>
     <object class="EventMixerMaster" id="{a495e9c6-f2ac-40b1-b7b6-22d736499d84}">
@@ -28,8 +28,8 @@
     <object class="MixerBusPanner" id="{6834439c-5920-40f5-b8a3-d426eb636c5c}"/>
     <object class="SingleSound" id="{d2221f7c-ddb3-4d51-83ba-1673b56be762}"/>
     <object class="EventMixerGroup" id="{d99c3428-12bd-4e48-809c-b5db1cf800f4}"/>
-    <object class="LoopRegion" id="{f49bb072-7423-4d43-bd10-b86d734434d0}"/>
     <object class="TempoMarker" id="{ba4d618d-b6ed-4fa7-a92e-a7801102ce62}"/>
+    <object class="LoopRegion" id="{f49bb072-7423-4d43-bd10-b86d734434d0}"/>
     <object class="MixerBusEffectChain" id="{e957b9e5-e5f2-480f-b62e-83e43b6f824a}"/>
     <object class="MixerBusPanner" id="{7e4a7ebc-bf75-4e45-a5dd-9cb3bd059a9f}"/>
     <object class="MixerBusFader" id="{93eb6e96-3327-4d24-8b8d-0106ba1b22f8}"/>

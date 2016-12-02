@@ -1,3 +1,11 @@
+{99b4bd18-454b-45c1-a7a3-3f57918b70e9} event:/BreatheIn_1
+{6e8ee1db-39d4-417a-ac35-33c0a6e2fddb} event:/BreatheIn_2
+{4b843de4-aa3c-40ad-a417-78fe9a7fdc62} event:/BreatheOut_1
+{32b41a25-41c6-4561-b88d-c31227f55ddb} event:/BreatheOut_2
+{67f0f334-ec1c-4fa0-8cf4-9572d2a564ec} event:/BreatheIn_3
+{d45d100b-6c2a-4344-8928-fd9741688e5c} event:/BreatheOut_3
+{bd0d3bee-29c8-40bc-8423-1e2c29aff2d5} event:/BreatheIn_4
+{5ecbcb55-bd78-4070-9822-effc6d33bec1} event:/BreatheOut_4
 {c5f2ab0e-741d-4747-80f2-1829c36e2975} event:/Track1
 {76da7039-1e22-4443-91ba-275f6c1b36ef} event:/Track2
 {d36b68ac-a9e3-4569-9400-6a1d578a5679} event:/Track3

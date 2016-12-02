@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.08.00">
+    <object class="AudioFile" id="{6ff66b16-4ec6-4ac5-8cb8-1279322a9c00}">
+        <property name="assetPath">
+            <value>001 Scene 6 - Rev Soul Kit.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>2.666689342403628</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{bbc681ef-1849-4e8b-bcef-939f75ddf9da}</destination>
+        </relationship>
+    </object>
+</objects>
