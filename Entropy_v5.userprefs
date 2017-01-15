@@ -1,15 +1,18 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Standard Assets/BEINGS/Meditation/Scripts/Rotate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\BEINGS\Meditation\Scripts\BreatheOutController.cs">
     <Files>
-      <File FileName="Assets/3rdPersonCamera/DemoSceneDependencies/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonUserControl.cs" Line="1" Column="1" />
-      <File FileName="Assets/Standard Assets/BEINGS/Figure/Playa.cs" Line="1" Column="1" />
-      <File FileName="Assets/3rdPersonCamera/Scripts/CameraController.cs" Line="1" Column="1" />
-      <File FileName="Assets/3rdPersonCamera/Scripts/FreeForm.cs" Line="1" Column="1" />
-      <File FileName="Assets/Standard Assets/BEINGS/Meditation/Scripts/BreathingMusic.cs" Line="102" Column="40" />
-      <File FileName="Assets/3rdPersonCamera/DemoSceneDependencies/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonCharacter.cs" Line="1" Column="1" />
-      <File FileName="Assets/BreatheController.cs" Line="25" Column="4" />
-      <File FileName="Assets/Standard Assets/BEINGS/Meditation/Scripts/Rotate.cs" Line="6" Column="25" />
+      <File FileName="Assets\Standard Assets\BEINGS\Meditation\Scripts\BreathingMusic.cs" Line="1" Column="1" />
+      <File FileName="Assets\Standard Assets\BEINGS\Meditation\Scripts\Rotate.cs" Line="1" Column="1" />
+      <File FileName="Assets\ScaleOscillate.cs" Line="1" Column="1" />
+      <File FileName="Assets\TextController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Standard Assets\BEINGS\Meditation\Scripts\BreatheOutController.cs" Line="37" Column="25" />
+      <File FileName="Assets\Standard Assets\BEINGS\Meditation\Scripts\MandalaController.cs" Line="33" Column="6" />
+      <File FileName="Assets\Standard Assets\BEINGS\Meditation\Scripts\FigureController.cs" Line="25" Column="17" />
+      <File FileName="Assets\Standard Assets\BEINGS\Meditation\Scripts\EnvironmentController.cs" Line="31" Column="69" />
+      <File FileName="Assets\TriggerVFX.cs" Line="16" Column="2" />
+      <File FileName="Assets\ParticleSortLayer.cs" Line="16" Column="1" />
+      <File FileName="Assets\Breaths.cs" Line="6" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
