@@ -29,8 +29,6 @@ public class MandalaController : MonoBehaviour {
 			pressed = false;
 			Activate (BreatheOutController.numBreaths);
 			BreatheOut ();
-			//numBreaths++;
-			//print(BreatheOutController.numBreaths);
 
 
 		}
@@ -38,7 +36,7 @@ public class MandalaController : MonoBehaviour {
 
 	void Activate (int breaths){
 		print (breaths);
-		if (breaths % bpl == 0) {
+		if ((breaths % bpl == 0) && (breaths > 0)) {
 			int currentLayer = breaths / bpl;
 
 			for (int i = 0; i < MandalaLayers.Length; i++) {

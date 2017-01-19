@@ -155,6 +155,7 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_ComponentMask\SFN_ComponentMask_CC3.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Parallax\SFN_Parallax_UV_REF.shader" />
+     <None Include="Assets\AmplifyColor\Resources\MaskBlend.shader" />
      <None Include="Assets\UFPS\Base\Content\Art\Body\Animations\_README_Animations.txt" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\SystemOFFWeapon.txt" />
      <None Include="Assets\UNOShader\UNLIT\Shaders\Shader Library\UNOShaderUNLIT MixAmbient Transparent Diffuse .shader" />
@@ -293,12 +294,14 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Apply.shader" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Standard\Weapon\WeaponPistol.txt" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\MaceWeaponPullUp.txt" />
+     <None Include="Assets\AmplifyColor\Resources\Blend.shader" />
      <None Include="Assets\UFPS\Base\Content\Art\Weapons\Source\BasicArms\_README_BasicArms.txt" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Parallax\SFN_Parallax_UV_DEP_REF.shader" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\PerspOldInput.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurvesSimple.shader" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Standard\Camera\InputZoom.txt" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_If\SFN_If.shader" />
+     <None Include="Assets\AmplifyColor\Resources\BlendCache.shader" />
      <None Include="Assets\ShaderForge\Example Assets\Shaders\VertexAnimation.shader" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\DrunkWeapon.txt" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_FaceSign\SFN_FaceSign.shader" />
@@ -306,7 +309,9 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\TwirlEffect.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\MaceWeaponPullRight.txt" />
+     <None Include="Assets\AmplifyColor\Resources\Mask.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\frag_ao.cginc" />
+     <None Include="Assets\AmplifyColor\Samples\Check out the full LUT Package.txt" />
      <None Include="Assets\3rdPersonCamera\Documentation\readme.txt" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Standard\Camera\InputDead.txt" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_VectorRejection\SFN_VectorRejection.shader" />
@@ -385,6 +390,7 @@
      <None Include="Assets\UFPS\Base\Scripts\Presets\Standard\Camera\CameraDead.txt" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Lerp\SFN_Lerp.shader" />
      <None Include="Assets\ShaderForge\Example Assets\Shaders\Parallax.shader" />
+     <None Include="Assets\AmplifyColor\Readme.txt" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Rotator\SFN_Rotator_PIV_ANG.shader" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\MouseSmoothingInput.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
@@ -467,6 +473,7 @@
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Dot\SFN_Dot_STD.shader" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Standard\Weapon\WeaponMachinegunZoom.txt" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Tex2d\SFN_Tex2d_NoInputs.shader" />
+     <None Include="Assets\AmplifyColor\Resources\ProcessOnly.shader" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Standard\Weapon\WeaponPistolReload.txt" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Standard\Shooter\ShooterRevolver.txt" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_DDY\SFN_DDY.shader" />
@@ -514,6 +521,7 @@
      <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
      <None Include="Assets\ShaderForge\Example Assets\Shaders\VertexColorRounding.shader" />
+     <None Include="Assets\AmplifyColor\Resources\DepthMask.shader" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\SystemOFFCamera.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\BlurEffectConeTaps.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionSelective.shader" />
@@ -524,6 +532,7 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\CameraMotionBlur.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_SwitchProperty\SFN_SwitchProperty.shader" />
      <None Include="Assets\UNOShader\UNLIT\Shaders\Shader Library\UNOShaderUNLIT Background Diffuse ShadowAmbient .shader" />
+     <None Include="Assets\AmplifyColor\Resources\Common.cginc" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_FogColor\SFN_FogColor.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\DLAA.shader" />
@@ -569,6 +578,7 @@
      <None Include="Assets\UNOShader\UNLIT\Shaders\Shader Library\UNOShaderUNLIT Transparent Diffuse FogOff .shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Get\SFN_Get.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Adaptation.shader" />
+     <None Include="Assets\AmplifyColor\Resources\DepthMaskBlend.shader" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\WeaponsHD\AssaultRifle01\WeaponAssaultRifle01Crouch.txt" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Relay\SFN_Relay.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Blend\SFN_Blend_Difference.shader" />
@@ -578,6 +588,7 @@
      <None Include="Assets\UFPS\Base\Content\Levels\SkyCity\CustomShaders\Scroll_Emissive.shader" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\MechInput.txt" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\MeleeAttackToLeft.txt" />
+     <None Include="Assets\AmplifyColor\Resources\Base.shader" />
      <None Include="Assets\VolumetricFog\Demos\Resources\SpriteFog\SpriteFogCommon.cginc" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\Common\FillColor.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrain.shader" />
@@ -735,6 +746,12 @@
  </Reference>
  <Reference Include="UnityEditor.TreeEditor">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="AmplifyColor">
+ <HintPath>C:/Users/Kenny/Documents/GitHub/Entropy_V5/Assets/AmplifyColor/Plugins/AmplifyColor.dll</HintPath>
+ </Reference>
+ <Reference Include="AmplifyColorEditor">
+ <HintPath>C:/Users/Kenny/Documents/GitHub/Entropy_V5/Assets/AmplifyColor/Plugins/Editor/AmplifyColorEditor.dll</HintPath>
  </Reference>
  <Reference Include="PlayMakerEditor">
  <HintPath>C:/Users/Kenny/Documents/GitHub/Entropy_V5/Assets/PlayMaker/Editor/PlayMakerEditor.dll</HintPath>

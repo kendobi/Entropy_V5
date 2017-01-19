@@ -6,7 +6,6 @@ public class EnvironmentController : MonoBehaviour {
 
 	Animator animator;
 	private bool pressed;
-	//private int numBreaths = 0;
 
 
 	// Use this for initialization
